@@ -31,7 +31,7 @@ function App() {
     <>
       {/* <BrowserRouter> */}
       <Navbar title="TextUtils1" mode={mode} toggleMode={toggleMode} />
-      <Alert alert={alert} />
+      <Alert alert={alert} mode={mode} />
       {/* <Routes>
           <Route
             path="/"
@@ -44,7 +44,7 @@ function App() {
                 }}
               > */}
       <div
-        className="py-3"
+        className="py-1"
         style={{
           backgroundColor: mode === 'dark' ? '#042743' : 'white',
           color: mode === 'dark' ? 'white' : 'black',
