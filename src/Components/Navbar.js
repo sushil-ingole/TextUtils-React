@@ -29,7 +29,7 @@ export default function Navbar(props) {
               {/* <Link className="nav-link active" to="/">
                 Home
               </Link> */}
-              <a className="nav-link active" href="/">
+              <a className="nav-link active" href="#">
                 Home
               </a>
             </li>
