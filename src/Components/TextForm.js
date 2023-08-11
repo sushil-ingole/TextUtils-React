@@ -40,13 +40,13 @@ export default function TextForm(props) {
             rows="3"
             placeholder="Enter text here"
           ></textarea>
-          <button className="btn btn-primary btn-sm mt-3 me-3" onClick={handleUpClick}>
+          <button disabled={text.length <= 0} className="btn btn-primary btn-sm mt-3 me-3" onClick={handleUpClick}>
             Convert to Uppercase
           </button>
-          <button className="btn btn-primary btn-sm mt-3 me-3" onClick={handleLowClick}>
+          <button disabled={text.length <= 0} className="btn btn-primary btn-sm mt-3 me-3" onClick={handleLowClick}>
             Convert to Lowercase
           </button>
-          <button className="btn btn-primary btn-sm mt-3 me-3" onClick={handleClearClick}>
+          <button disabled={text.length <= 0} className="btn btn-primary btn-sm mt-3 me-3" onClick={handleClearClick}>
             Clear text
           </button>
         </div>
